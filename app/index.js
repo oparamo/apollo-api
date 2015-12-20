@@ -1,11 +1,11 @@
 'use strict';
 
-let Hapi = require('hapi');
-let Util = require('util');
+const Hapi = require('hapi');
+const Util = require('util');
 
-let Config = require('../config');
+const Config = require('../config');
 
-let server = new Hapi.Server({
+const server = new Hapi.Server({
   connections: {
     routes: {
       // allowed origin servers and allow user credentials
@@ -14,9 +14,7 @@ let server = new Hapi.Server({
         credentials: true
       },
       // json formatting
-      json: {
-        space: 2
-      }
+      json: { space: 2 }
     }
   }
 });
@@ -27,22 +25,24 @@ server.connection({
   port: Config.PORT
 });
 
-server.register([
-  require('./plugins')
-], err => {
+// start server when plugins registered succesfully
+server.register({ register: require('./plugins') }, (err) => {
   if (err) {
-    throw err
+    throw err;
   };
 
-  server.start(err => {
+  server.start((err) => {
     if (err) {
-      return Util.log('Error:', err.message)
+      return Util.log('Error:', err.message);
     };
 
     Util.log(`Server started on ${Config.HOST}:${Config.PORT}`);
   });
 });
 
-process.on('SIGTERM', () => server.stop({ timeout: 5 * 1000 }, () => process.exit(0)));
+// gracefully stop server upon receipt of process termination signal
+process.on('SIGTERM', () => {
+  server.stop({ timeout: 5 * 1000 }, () => process.exit(0));
+});
 
 module.exports = server;

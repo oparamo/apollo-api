@@ -1,10 +1,10 @@
 'use strict';
 
-let Util = require('util');
+const Util = require('util');
 
 exports.register = (server, options, next) => {
   server.register([
-  ], err =>  {
+  ], (err) =>  {
     if (err) {
       throw err;
     }
