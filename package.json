@@ -4,7 +4,7 @@
   "description": "API for a collaborative DJ app.",
   "main": "app/index.js",
   "scripts": {
-    "lint": "eslint app",
+    "lint": "eslint .",
     "precommit": "npm run lint",
     "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
     "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
