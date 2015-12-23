@@ -1,6 +1,6 @@
 {
   "name": "apollo-api",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "API for a collaborative DJ app.",
   "main": "app/index.js",
   "scripts": {
