@@ -10,8 +10,8 @@
     "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
     "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags",
     "start": "node app/index.js",
-    "test": "lab -t 100",
-    "test-cov-html": "lab -r html -o coverage.html"
+    "test": "lab -L -t 100",
+    "test-cov-html": "lab -L -r html -o coverage.html"
   },
   "repository": {
     "type": "git",
