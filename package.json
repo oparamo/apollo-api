@@ -49,6 +49,6 @@
     "eslint-plugin-hapi": "4.0.0",
     "generate-changelog": "1.0.0",
     "husky": "0.10.2",
-    "lab": "8.0.0"
+    "lab": "8.0.1"
   }
 }
