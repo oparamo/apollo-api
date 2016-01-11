@@ -3,8 +3,8 @@
 const Util = require('util');
 
 exports.register = (server, options, next) => {
-  server.register([
-  ], (err) =>  {
+  server.register([])
+  .then((err) =>  {
     /* $lab:coverage:off$ */
     if (err) {
       throw err;

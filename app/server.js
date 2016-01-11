@@ -25,7 +25,8 @@ server.connection({
 });
 
 // register plugins
-server.register({ register: require('./plugins') }, (err) => {
+server.register({ register: require('./plugins') })
+.then((err) => {
   /* $lab:coverage:off$ */
   if (err) {
     throw err;
