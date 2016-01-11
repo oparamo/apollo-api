@@ -5,9 +5,11 @@ const Util = require('util');
 exports.register = (server, options, next) => {
   server.register([
   ], (err) =>  {
+    /* $lab:coverage:off$ */
     if (err) {
       throw err;
     }
+    /* $lab:coverage:on$ */
 
     Util.log(`Server registered plugins succesfully`);
   });
@@ -16,5 +18,6 @@ exports.register = (server, options, next) => {
 };
 
 exports.register.attributes = {
-  name: 'plugins'
+  name: 'apollo-plugins',
+  version: '0.0.0'
 };
