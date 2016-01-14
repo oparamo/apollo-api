@@ -3,7 +3,7 @@
 const Util = require('util');
 
 exports.register = (server, options, next) => {
-  server.register([])
+  server.register([require('./apollo-hapi-playmusic')])
   .then((err) =>  {
     /* $lab:coverage:off$ */
     if (err) {
@@ -18,6 +18,6 @@ exports.register = (server, options, next) => {
 };
 
 exports.register.attributes = {
-  name: 'apollo-plugins',
+  name: 'apollo-hapi-plugins',
   version: '0.0.0'
 };
