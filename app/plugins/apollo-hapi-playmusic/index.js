@@ -1,25 +1,17 @@
 'use strict';
 
 const PlayMusic = require('playmusic');
-const pm = new PlayMusic();
+const Promise = require('bluebird');
 
-const apolloPM = {};
-
-apolloPM.login = (opt, callback) => {
-  return pm.login(opt, callback);
-};
-
-apolloPM.getStreamUrl = (id, callback) => {
-  return pm.getStreamUrl(id, callback);
-};
+const pm = Promise.promisifyAll(new PlayMusic());
 
 exports.register = (server, options, next) => {
-  server.expose(apolloPM);
+  server.expose(pm);
 
   next();
 };
 
 exports.register.attributes = {
-  name: 'apollo-hapi-playmusic',
+  name: 'hapi-playmusic',
   version: '0.0.0'
 };

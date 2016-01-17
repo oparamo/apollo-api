@@ -18,110 +18,110 @@ describe('Apollo Api - Google Play Music plugin', () => {
     done();
   });
 
-  it('should have a login function', (done) => {
-    expect(server.plugins['apollo-hapi-playmusic'].login).to.be.a.function();
+  it('should have a promisified login function', (done) => {
+    expect(server.plugins['hapi-playmusic'].loginAsync).to.be.a.function();
 
     done();
   });
 
-  it('should have a init function', (done) => {
-    expect(server.plugins['apollo-hapi-playmusic'].init).to.be.a.function();
+  it('should have a promisified init function', (done) => {
+    expect(server.plugins['hapi-playmusic'].initAsync).to.be.a.function();
 
     done();
   });
 
-  it('should have a getSettings function', (done) => {
-    expect(server.plugins['apollo-hapi-playmusic'].getSettings).to.be.a.function();
+  it('should have a promisified getSettings function', (done) => {
+    expect(server.plugins['hapi-playmusic'].getSettingsAsync).to.be.a.function();
 
     done();
   });
 
-  it('should have a getAllTracks function', (done) => {
-    expect(server.plugins['apollo-hapi-playmusic'].getAllTracks).to.be.a.function();
+  it('should have a promisified getAllTracks function', (done) => {
+    expect(server.plugins['hapi-playmusic'].getAllTracksAsync).to.be.a.function();
 
     done();
   });
 
-  it('should have a getStreamUrl function', (done) => {
-    expect(server.plugins['apollo-hapi-playmusic'].getStreamUrl).to.be.a.function();
+  it('should have a promisified getStreamUrl function', (done) => {
+    expect(server.plugins['hapi-playmusic'].getStreamUrlAsync).to.be.a.function();
 
     done();
   });
 
-  it('should have a search function', (done) => {
-    expect(server.plugins['apollo-hapi-playmusic'].search).to.be.a.function();
+  it('should have a promisified search function', (done) => {
+    expect(server.plugins['hapi-playmusic'].searchAsync).to.be.a.function();
 
     done();
   });
 
-  it('should have a getPlayLists function', (done) => {
-    expect(server.plugins['apollo-hapi-playmusic'].getPlayLists).to.be.a.function();
+  it('should have a promisified getPlayLists function', (done) => {
+    expect(server.plugins['hapi-playmusic'].getPlayListsAsync).to.be.a.function();
 
     done();
   });
 
-  it('should have a addPlayList function', (done) => {
-    expect(server.plugins['apollo-hapi-playmusic'].addPlayList).to.be.a.function();
+  it('should have a promisified addPlayList function', (done) => {
+    expect(server.plugins['hapi-playmusic'].addPlayListAsync).to.be.a.function();
 
     done();
   });
 
-  it('should have a addTrackToPlayList function', (done) => {
-    expect(server.plugins['apollo-hapi-playmusic'].addTrackToPlayList).to.be.a.function();
+  it('should have a promisified addTrackToPlayList function', (done) => {
+    expect(server.plugins['hapi-playmusic'].addTrackToPlayListAsync).to.be.a.function();
 
     done();
   });
 
-  it('should have a incrementTrackPlaycount function', (done) => {
-    expect(server.plugins['apollo-hapi-playmusic'].incrementTrackPlaycount).to.be.a.function();
+  it('should have a promisified incrementTrackPlaycount function', (done) => {
+    expect(server.plugins['hapi-playmusic'].incrementTrackPlaycountAsync).to.be.a.function();
 
     done();
   });
 
-  it('should have a removePlayListEntry function', (done) => {
-    expect(server.plugins['apollo-hapi-playmusic'].removePlayListEntry).to.be.a.function();
+  it('should have a promisified removePlayListEntry function', (done) => {
+    expect(server.plugins['hapi-playmusic'].removePlayListEntryAsync).to.be.a.function();
 
     done();
   });
 
-  it('should have a getPlayListEntries function', (done) => {
-    expect(server.plugins['apollo-hapi-playmusic'].getPlayListEntries).to.be.a.function();
+  it('should have a promisified getPlayListEntries function', (done) => {
+    expect(server.plugins['hapi-playmusic'].getPlayListEntriesAsync).to.be.a.function();
 
     done();
   });
 
-  it('should have a getAlbum function', (done) => {
-    expect(server.plugins['apollo-hapi-playmusic'].getAlbum).to.be.a.function();
+  it('should have a promisified getAlbum function', (done) => {
+    expect(server.plugins['hapi-playmusic'].getAlbumAsync).to.be.a.function();
 
     done();
   });
 
-  it('should have a getArtist function', (done) => {
-    expect(server.plugins['apollo-hapi-playmusic'].getArtist).to.be.a.function();
+  it('should have a promisified getArtist function', (done) => {
+    expect(server.plugins['hapi-playmusic'].getArtistAsync).to.be.a.function();
 
     done();
   });
 
-  it('should have a getStations function', (done) => {
-    expect(server.plugins['apollo-hapi-playmusic'].getStations).to.be.a.function();
+  it('should have a promisified getStations function', (done) => {
+    expect(server.plugins['hapi-playmusic'].getStationsAsync).to.be.a.function();
 
     done();
   });
 
-  it('should have a createStation function', (done) => {
-    expect(server.plugins['apollo-hapi-playmusic'].createStation).to.be.a.function();
+  it('should have a promisified createStation function', (done) => {
+    expect(server.plugins['hapi-playmusic'].createStationAsync).to.be.a.function();
 
     done();
   });
 
-  it('should have a getStationTracks function', (done) => {
-    expect(server.plugins['apollo-hapi-playmusic'].getStationTracks).to.be.a.function();
+  it('should have a promisified getStationTracks function', (done) => {
+    expect(server.plugins['hapi-playmusic'].getStationTracksAsync).to.be.a.function();
 
     done();
   });
 
-  it('should have a getFavorites function', (done) => {
-    expect(server.plugins['apollo-hapi-playmusic'].getFavorites).to.be.a.function();
+  it('should have a promisified getFavorites function', (done) => {
+    expect(server.plugins['hapi-playmusic'].getFavoritesAsync).to.be.a.function();
 
     done();
   });
