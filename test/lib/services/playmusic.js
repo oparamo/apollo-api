@@ -13,7 +13,7 @@ describe('Apollo Api - playmusic plugin', () => {
   let Services;
 
   before((done) => {
-    Services = require('../../../../app/lib/services');
+    Services = require('../../../app/lib/services');
 
     done();
   });
