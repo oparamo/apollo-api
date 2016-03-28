@@ -11,7 +11,7 @@ exports.register = (server, options, next) => {
     }
     /* $lab:coverage:on$ */
 
-    Util.log(`Server registered plugins succesfully`);
+    Util.log('Server registered plugins succesfully');
   });
 
   next();

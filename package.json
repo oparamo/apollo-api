@@ -18,7 +18,7 @@
     "url": "git+https://github.com/oparamo/apollo-api.git"
   },
   "engines": {
-    "node": ">= 5.0.0"
+    "node": ">= 4.0.0"
   },
   "author": {
     "email": "oscar.paramo@me.com",
@@ -38,19 +38,19 @@
   },
   "homepage": "https://github.com/oparamo/apollo-api#readme",
   "dependencies": {
-    "bluebird": "3.1.1",
-    "boom": "3.1.1",
-    "hapi": "12.1.0",
-    "joi": "7.1.0",
+    "bluebird": "3.3.4",
+    "boom": "3.1.2",
+    "hapi": "13.2.2",
+    "joi": "8.0.5",
     "playmusic": "2.1.1"
   },
   "devDependencies": {
-    "code": "2.1.0",
-    "eslint": "1.10.3",
-    "eslint-config-hapi": "8.0.1",
+    "code": "2.1.1",
+    "eslint": "2.5.1",
+    "eslint-config-hapi": "9.1.0",
     "eslint-plugin-hapi": "4.0.0",
-    "generate-changelog": "1.0.0",
-    "husky": "0.10.2",
-    "lab": "8.0.1"
+    "generate-changelog": "1.0.1",
+    "husky": "0.11.4",
+    "lab": "10.3.0"
   }
 }
